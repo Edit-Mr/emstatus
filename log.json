@@ -1,48 +1,48 @@
 {
-    "websites": [
+  "websites": [
+    {
+      "name": "Google",
+      "url": "https://www.google.com",
+      "log": [
         {
-            "name": "Google",
-            "url": "https://www.google.com",
-            "log": [
-                {
-                    "time": 1720628446289,
-                    "status": "200"
-                },
-                {
-                    "time": 1720628446389,
-                    "status": "500",
-                    "message": "Internal Server Error"
-                },
-                {
-                    "time": 1720628446489,
-                    "status": "200"
-                }
-            ]
+          "time": 1720628446289,
+          "status": "200"
         },
         {
-            "name": "Facebook",
-            "url": "https://www.facebook.com",
-            "log": [
-                {
-                    "time": 1720628446389,
-                    "status": "500",
-                    "message": "Internal Server Error"
-                },
-                {
-                    "time": 1720628446489,
-                    "status": "200"
-                }
-            ]
+          "time": 1720628446389,
+          "status": "500",
+          "message": "Internal Server Error"
         },
         {
-            "name": "Twitter",
-            "url": "https://www.twitter.com",
-            "log": [
-                {
-                    "time": 1720628446489,
-                    "status": "200"
-                }
-            ]
+          "time": 1720630864899,
+          "status": "200"
         }
-    ]
+      ]
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com",
+      "log": [
+        {
+          "time": 1720628446389,
+          "status": "500",
+          "message": "Internal Server Error"
+        },
+        {
+          "time": 1720630865529,
+          "status": "200"
+        }
+      ]
+    },
+    {
+      "name": "Twitter",
+      "url": "https://www.twitter.com",
+      "log": [
+        {
+          "time": 1720630866095,
+          "status": "200"
+        }
+      ]
+    }
+  ]
 }
