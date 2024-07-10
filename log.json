@@ -1,48 +1,55 @@
 {
-  "websites": [
-    {
-      "name": "Google",
-      "url": "https://www.google.com",
-      "log": [
+    "websites": [
         {
-          "time": 1720628446289,
-          "status": "200"
+            "name": "EM's Base",
+            "url": "https://elvismao.com/",
+            "log": [
+                {
+                    "time": 1720628446289,
+                    "status": "200"
+                }
+            ]
         },
         {
-          "time": 1720628446389,
-          "status": "500",
-          "message": "Internal Server Error"
+            "name": "毛哥EM資訊密技",
+            "url": "https://emtech.cc/",
+            "log": [
+                {
+                    "time": 1720628446389,
+                    "status": "500",
+                    "message": "Internal Server Error"
+                }
+            ]
         },
         {
-          "time": 1720630864899,
-          "status": "200"
-        }
-      ]
-    },
-    {
-      "name": "Facebook",
-      "url": "https://www.facebook.com",
-      "log": [
-        {
-          "time": 1720628446389,
-          "status": "500",
-          "message": "Internal Server Error"
+            "name": "emfont",
+            "url": "https://font.emtech.cc/",
+            "log": [
+                {
+                    "time": 1720630866095,
+                    "status": "200"
+                }
+            ]
         },
         {
-          "time": 1720630865529,
-          "status": "200"
-        }
-      ]
-    },
-    {
-      "name": "Twitter",
-      "url": "https://www.twitter.com",
-      "log": [
+            "name": "TOTP4ALL",
+            "url": "https://totp.emtech.cc/",
+            "log": [
+                {
+                    "time": 1720630866095,
+                    "status": "200"
+                }
+            ]
+        },
         {
-          "time": 1720630866095,
-          "status": "200"
+            "name": "學聲 EduVoice",
+            "url": "https://eduvoice.emtech.cc/",
+            "log": [
+                {
+                    "time": 1720630866095,
+                    "status": "200"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
