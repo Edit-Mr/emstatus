@@ -21,9 +21,11 @@ main {
     margin: 0 auto;
     width: 100%;
 }
-
+main{
+    padding: 0 2rem;
+}
 header {
-    padding: 1.875rem 1rem 3.75rem;
+    padding: 1.875rem 2rem 3.75rem;
     height: 20rem;
     display: flex;
     background: url(https://raw.githubusercontent.com/Edit-Mr/Edit-Mr/main/avatar.PNG)
@@ -36,6 +38,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 header h1 {
     font-size: 2.5rem;
@@ -68,6 +71,7 @@ header p {
     outline: transparent;
     color: transparent;
     position: relative;
+    cursor: pointer;
 }
 
 #join::before {
@@ -89,6 +93,7 @@ header p {
     font-weight: 700;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 45px;
 }
 #conclusion .dot {
@@ -119,6 +124,7 @@ h2 span {
 }
 .percentage {
     color: #3bd671;
+    width: 5em;
 }
 .website {
     display: flex;
@@ -135,6 +141,8 @@ h2 span {
 .website h3 {
     font-size: 1rem;
     font-weight: 400;
+    width: 5rem;
+    flex-shrink: 1;
     margin-right: 2rem;
 }
 .graph {
@@ -148,6 +156,7 @@ h2 span {
     flex: 1;
     background: #3bd671;
     border-radius: 500px;
+    min-width: 5px;
 }
 .dot {
     background: #3bd671;
@@ -160,6 +169,14 @@ h2 span {
 
 .green {
     color: #3bd671;
+}
+
+.orange{
+    background-color: #f29030!important;
+}
+
+.red{
+    background-color: #df484a!important;
 }
 
 #overall {
