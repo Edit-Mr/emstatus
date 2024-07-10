@@ -171,14 +171,20 @@ h2 span {
     color: #3bd671;
 }
 
-.orange{
+.dot.orange,.graph .orange{
     background-color: #f29030!important;
 }
 
-.red{
+.dot.red,.graph .red{
     background-color: #df484a!important;
 }
+.orange{
+    color: #f29030!important;
+}
 
+.red{
+    color: #df484a!important;
+}
 #overall {
     display: flex;
     justify-content: space-between;

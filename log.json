@@ -1,59 +1,59 @@
 {
-  "websites": [
-    {
-      "name": "EM's Base",
-      "url": "https://elvismao.com/",
-      "log": [
+    "websites": [
         {
-          "time": 1720639726170,
-          "status": "200"
-        }
-      ]
-    },
-    {
-      "name": "??EM????",
-      "url": "https://emtech.cc/",
-      "log": [
-        {
-          "time": 1720628446389,
-          "status": "500",
-          "message": "Internal Server Error"
+            "name": "EM's Base",
+            "url": "https://elvismao.com/",
+            "log": [
+                {
+                    "time": 1720639726170,
+                    "status": "200"
+                }
+            ]
         },
         {
-          "time": 1720639726369,
-          "status": 200
-        }
-      ]
-    },
-    {
-      "name": "emfont",
-      "url": "https://font.emtech.cc/",
-      "log": [
+            "name": "emtech.cc",
+            "url": "https://emtech.cc/",
+            "log": [
+                {
+                    "time": 1720628446389,
+                    "status": "500",
+                    "message": "Internal Server Error"
+                },
+                {
+                    "time": 1720639726369,
+                    "status": 200
+                }
+            ]
+        },
         {
-          "time": 1720639727014,
-          "status": "200"
-        }
-      ]
-    },
-    {
-      "name": "TOTP4ALL",
-      "url": "https://totp.emtech.cc/",
-      "log": [
+            "name": "emfont",
+            "url": "https://font.emtech.cc/",
+            "log": [
+                {
+                    "time": 1720639727014,
+                    "status": "200"
+                }
+            ]
+        },
         {
-          "time": 1720639727707,
-          "status": "200"
-        }
-      ]
-    },
-    {
-      "name": "?? EduVoice",
-      "url": "https://eduvoice.emtech.cc/",
-      "log": [
+            "name": "TOTP4ALL",
+            "url": "https://totp.emtech.cc/",
+            "log": [
+                {
+                    "time": 1720639727707,
+                    "status": "200"
+                }
+            ]
+        },
         {
-          "time": 1720639728360,
-          "status": "200"
+            "name": "EduVoice",
+            "url": "https://eduvoice.emtech.cc/",
+            "log": [
+                {
+                    "time": 1720639728360,
+                    "status": "200"
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
