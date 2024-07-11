@@ -177,6 +177,8 @@
                                     ? "green"
                                     : entry.status >= 500
                                     ? "red"
+                                     : entry.status == 0
+                                    ? "red"
                                     : "orange";
                             return `<div class="${color}" style="flex: ${entry.timelen};"></div>`;
                         })
@@ -194,7 +196,7 @@
                         <div class="current-status">
                             <div class="dot ${isUp ? "green" : "red"}"></div>
                             <span class="${isUp ? "green" : "red"}">${
-                        isUp ? "Up" : "Down"
+                        isUp ? "Up" : "Error"
                     }</span>
                         </div>
                     `;

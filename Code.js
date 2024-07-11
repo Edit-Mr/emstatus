@@ -55,12 +55,20 @@ function getWebsiteStatus(url) {
             message: "",
         };
     } catch (e) {
-        return {
-            code: e.response.getResponseCode(),
-            message: e.message,
-        };
+        if (e.response) {
+            return {
+                code: e.response.getResponseCode(),
+                message: e.message,
+            };
+        } else {
+            return {
+                code: 0,
+                message: e.message,
+            };
+        }
     }
 }
+
 
 function getShaOfFile(githubRepoUrl, githubToken) {
     const options = {
@@ -73,4 +81,10 @@ function getShaOfFile(githubRepoUrl, githubToken) {
     const response = UrlFetchApp.fetch(githubRepoUrl, options);
     const json = JSON.parse(response.getContentText());
     return json.sha;
+}
+
+function testStatus() {
+    const url = "https://pi.elvismao.com/";
+    const e = getWebsiteStatus(url);
+    Logger.log(e);
 }
