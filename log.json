@@ -1,17 +1,17 @@
 {
   "websites": [
     {
-      "name": "毛哥EM的基地",
+      "name": "EM's Base",
       "url": "https://elvismao.com/",
       "log": [
         {
-          "time": 1720709594763,
+          "time": 1720709992206,
           "status": "200"
         }
       ]
     },
     {
-      "name": "毛哥EM資訊密技",
+      "name": "emtech.cc",
       "url": "https://emtech.cc/",
       "log": [
         {
@@ -20,7 +20,7 @@
           "message": "Internal Server Error"
         },
         {
-          "time": 1720709594930,
+          "time": 1720709992307,
           "status": 200
         }
       ]
@@ -30,7 +30,7 @@
       "url": "https://font.emtech.cc/",
       "log": [
         {
-          "time": 1720709595440,
+          "time": 1720709992834,
           "status": "200"
         }
       ]
@@ -40,31 +40,21 @@
       "url": "https://totp.emtech.cc/",
       "log": [
         {
-          "time": 1720709596003,
+          "time": 1720709993305,
           "status": "200"
         }
       ]
     },
     {
-      "name": "學聲 EduVoice",
+      "name": "EduVoice",
       "url": "https://eduvoice.emtech.cc/",
       "log": [
         {
-          "time": 1720709596483,
-          "status": "200"
-        }
-      ]
-    },
-    {
-      "name": "embox",
-      "url": "https://pi.elvismao.com/",
-      "log": [
-        {
-          "time": 1720709596483,
+          "time": 1720709993857,
           "status": "200"
         }
       ]
     }
   ],
-  "lastUpdate": 1720709596483
+  "lastUpdate": 1720709993857
 }
