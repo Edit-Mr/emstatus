@@ -5,8 +5,8 @@
       "url": "https://elvismao.com/",
       "log": [
         {
-          "time": 1720708994278,
-          "status": 200
+          "time": 1720709294877,
+          "status": "200"
         }
       ]
     },
@@ -15,7 +15,12 @@
       "url": "https://emtech.cc/",
       "log": [
         {
-          "time": 1720708994420,
+          "time": 1720628446389,
+          "status": "500",
+          "message": "Internal Server Error"
+        },
+        {
+          "time": 1720709295052,
           "status": 200
         }
       ]
@@ -25,8 +30,8 @@
       "url": "https://font.emtech.cc/",
       "log": [
         {
-          "time": 1720708994913,
-          "status": 200
+          "time": 1720709295487,
+          "status": "200"
         }
       ]
     },
@@ -35,8 +40,8 @@
       "url": "https://totp.emtech.cc/",
       "log": [
         {
-          "time": 1720708995354,
-          "status": 200
+          "time": 1720709295959,
+          "status": "200"
         }
       ]
     },
@@ -45,21 +50,11 @@
       "url": "https://eduvoice.emtech.cc/",
       "log": [
         {
-          "time": 1720708995833,
-          "status": 200
-        }
-      ]
-    },
-    {
-      "name": "embox",
-      "url": "https://pi.elvismao.com",
-      "log": [
-        {
-          "time": 1720706683929,
-          "status": 200
+          "time": 1720709296417,
+          "status": "200"
         }
       ]
     }
   ],
-  "lastUpdate": 1720708995833
+  "lastUpdate": 1720709296417
 }
