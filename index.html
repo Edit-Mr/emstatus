@@ -55,6 +55,7 @@
                 <div>
                     <h1>emstatus</h1>
                     <p>毛哥EM的網頁狀態</p>
+                    <p id="lastUpdate"></p>
                 </div>
                 <div class="right">
                     <div>
@@ -120,11 +121,18 @@
                     "https://raw.githubusercontent.com/Edit-Mr/emstatus/main/log.json"
                 );
                 const data = await response.json();
+
+                document.getElementById("lastUpdate").textContent =
+                    "更新時間：" +
+                    new Date(data.lastUpdate).toLocaleString("zh-Hant", {
+                        timeZone: "Asia/Taipei",
+                    });
+
                 const uptimeSection = document.getElementById("uptime");
                 let allSitesUp = true;
                 var upTime24 = 24 * 60 * 60 * 1000,
                     upTime7 = upTime24 * 7,
-                    upTime30 = upTime7 * 30,
+                    upTime30 = upTime24 * 30,
                     upTime90 = upTime30 * 3;
                 data.websites.forEach(site => {
                     const lastLog = site.log[site.log.length - 1];
@@ -132,15 +140,18 @@
                     if (!isUp) {
                         allSitesUp = false;
                     }
-
                     const siteElement = document.createElement("div");
                     siteElement.classList.add("website");
-                    // get the time of 90 days ago
                     const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
                     // count each peried of time
                     var graphData = [];
                     var allTime = 0,
                         upTime = 0;
+                    // add current to last status
+                    site.log.push({
+                        time: Date.now(),
+                        status: site.log[site.log.length - 1].status,
+                    });
                     for (var i = 0; i < site.log.length - 1; i++) {
                         const timelen = site.log[i + 1].time - site.log[i].time;
 
@@ -155,31 +166,10 @@
                             }
                         }
                         if (site.log[i].status != 200) {
-                            if (
-                                site.log[i].time >
-                                Date.now() - 24 * 60 * 60 * 1000
-                            ) {
-                                upTime24 -= timelen;
-                                console.log(timelen);
-                            }
-                            if (
-                                site.log[i].time >
-                                Date.now() - 7 * 24 * 60 * 60 * 1000
-                            ) {
-                                upTime7 -= timelen;
-                            }
-                            if (
-                                site.log[i].time >
-                                Date.now() - 30 * 24 * 60 * 60 * 1000
-                            ) {
-                                upTime30 -= timelen;
-                            }
-                            if (
-                                site.log[i].time >
-                                Date.now() - 90 * 24 * 60 * 60 * 1000
-                            ) {
-                                upTime90 -= timelen;
-                            }
+                            upTime24 -= timelen;
+                            upTime7 -= timelen;
+                            upTime30 -= timelen;
+                            upTime90 -= timelen;
                         }
                     }
                     const graph = graphData
@@ -195,7 +185,9 @@
                         .join("");
 
                     siteElement.innerHTML = `
-                        <h3>${site.name}</h3>
+                        <h3><a href="${site.url}" target="_blank">${
+                        site.name
+                    }</a></h3>
                         <div class="percentage">${(
                             (upTime / allTime) *
                             100

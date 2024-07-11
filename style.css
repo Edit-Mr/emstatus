@@ -145,6 +145,15 @@ h2 span {
     flex-shrink: 1;
     margin-right: 2rem;
 }
+
+h3 a {
+    color: #131a26;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
 .graph {
     display: flex;
     justify-content: space-between;
