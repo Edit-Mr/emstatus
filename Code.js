@@ -1,12 +1,9 @@
 /** @format */
 
 function checkWebsiteStatus() {
-    const githubFileUrl =
-        "https://github.com/Edit-Mr/emstatus/raw/main/log.json";
-    const githubRepoUrl =
-        "https://api.github.com/repos/Edit-Mr/emstatus/contents/log.json";
-    const githubToken =
-        ""; // 請替換為你的 GitHub Token
+    const githubFileUrl = "https://github.com/Edit-Mr/emstatus/raw/main/log.json";
+    const githubRepoUrl = "https://api.github.com/repos/Edit-Mr/emstatus/contents/log.json";
+    const githubToken = ""; // 請替換為你的 GitHub Token
 
     // 讀取現有的 JSON 文件
     const response = UrlFetchApp.fetch(githubFileUrl);
@@ -41,11 +38,8 @@ function checkWebsiteStatus() {
             Authorization: "token " + githubToken,
         },
         payload: JSON.stringify({
-            // date to local string
-            message:
-                "更新紀錄 " +
-                new Date().toLocaleString("zh-TW", { timeZone: "Asia/Taipei" }),
-            content: Utilities.base64Encode(updatedJsonData),
+            message: "更新紀錄 " + new Date().toLocaleString("zh-TW", { timeZone: "Asia/Taipei" }),
+            content: Utilities.base64Encode(Utilities.newBlob(updatedJsonData).getBytes()),
             sha: getShaOfFile(githubRepoUrl, githubToken),
         }),
     };

@@ -1,17 +1,17 @@
 {
   "websites": [
     {
-      "name": "EM's Base",
+      "name": "毛哥EM的基地",
       "url": "https://elvismao.com/",
       "log": [
         {
-          "time": 1720709992206,
+          "time": 1720709594763,
           "status": "200"
         }
       ]
     },
     {
-      "name": "emtech.cc",
+      "name": "毛哥EM資訊密技",
       "url": "https://emtech.cc/",
       "log": [
         {
@@ -20,7 +20,7 @@
           "message": "Internal Server Error"
         },
         {
-          "time": 1720709992307,
+          "time": 1720709594930,
           "status": 200
         }
       ]
@@ -30,7 +30,7 @@
       "url": "https://font.emtech.cc/",
       "log": [
         {
-          "time": 1720709992834,
+          "time": 1720709595440,
           "status": "200"
         }
       ]
@@ -40,21 +40,61 @@
       "url": "https://totp.emtech.cc/",
       "log": [
         {
-          "time": 1720709993305,
+          "time": 1720709596003,
           "status": "200"
         }
       ]
     },
     {
-      "name": "EduVoice",
+      "name": "學聲 EduVoice",
       "url": "https://eduvoice.emtech.cc/",
       "log": [
         {
-          "time": 1720709993857,
+          "time": 1720709596483,
+          "status": "200"
+        }
+      ]
+    },
+    {
+      "name": "embox",
+      "url": "https://pi.elvismao.com/",
+      "log": [
+        {
+          "time": 1720709596483,
+          "status": "200"
+        }
+      ]
+    },
+    {
+      "name": "SCAICT",
+      "url": "https://scaict.org/",
+      "log": [
+        {
+          "time": 1720709596483,
+          "status": "200"
+        }
+      ]
+    },
+    {
+      "name": "中電商店",
+      "url": "https://store.scaict.org/",
+      "log": [
+        {
+          "time": 1720709596483,
+          "status": "200"
+        }
+      ]
+    },
+    {
+      "name": "中電商店",
+      "url": "https://store.scaict.org/",
+      "log": [
+        {
+          "time": 1720709596483,
           "status": "200"
         }
       ]
     }
   ],
-  "lastUpdate": 1720709993857
+  "lastUpdate": 1720709596483
 }
