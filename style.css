@@ -197,13 +197,15 @@ h3 a:hover {
     color: #df484a !important;
 }
 
-.current-status{
+.current-status {
     width: 4em;
 }
 #overall {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 #overall h3 {
@@ -218,7 +220,7 @@ h3 a:hover {
 footer {
     text-align: center;
     color: #637189;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;line-height: 1.5;
 }
 footer a {
     color: #637189;
