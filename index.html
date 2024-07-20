@@ -133,6 +133,10 @@
                     upTime7 = upTime24 * 7,
                     upTime30 = upTime24 * 30,
                     upTime90 = upTime30 * 3;
+                const sevenDaysAgo = Date.now() - upTime7,
+                    thirtyDaysAgo = Date.now() - upTime30,
+                    ninetyDaysAgo = Date.now() - upTime90,
+                    twentyFourHoursAgo = Date.now() - upTime24;
                 data.websites.forEach(site => {
                     const lastLog = site.log[site.log.length - 1];
                     const isUp = lastLog.status == 200;
@@ -141,7 +145,6 @@
                     }
                     const siteElement = document.createElement("div");
                     siteElement.classList.add("website");
-                    const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
                     // count each peried of time
                     var graphData = [];
                     var allTime = 0,
@@ -152,7 +155,9 @@
                         status: site.log[site.log.length - 1].status,
                     });
                     for (var i = 0; i < site.log.length - 1; i++) {
-                        const timelen = site.log[i + 1].time - site.log[i].time;
+                        const timeEnd = site.log[i + 1].time;
+                        const timeStart = site.log[i].time;
+                        const timelen = timeEnd - timeStart;
 
                         if (site.log[i].time > sevenDaysAgo) {
                             graphData.push({
@@ -165,10 +170,34 @@
                             }
                         }
                         if (site.log[i].status != 200) {
-                            upTime24 -= timelen;
-                            upTime7 -= timelen;
-                            upTime30 -= timelen;
-                            upTime90 -= timelen;
+                            if (timeEnd > ninetyDaysAgo) {
+                                upTime90 -=
+                                    timeStart > ninetyDaysAgo
+                                        ? timelen
+                                        : timeEnd - ninetyDaysAgo;
+                                if (timeEnd > thirtyDaysAgo) {
+                                    upTime30 -=
+                                        timeStart > thirtyDaysAgo
+                                            ? timelen
+                                            : timeEnd - thirtyDaysAgo;
+                                    if (timeEnd > sevenDaysAgo) {
+                                        upTime7 -=
+                                            timeStart > sevenDaysAgo
+                                                ? timelen
+                                                : timeEnd - sevenDaysAgo;
+                                        if (timeEnd > twentyFourHoursAgo) {
+                                            upTime24 -=
+                                                timeStart > twentyFourHoursAgo
+                                                    ? timelen
+                                                    : timeEnd -
+                                                      twentyFourHoursAgo;
+                                            console.log(
+                                                timeEnd > twentyFourHoursAgo
+                                            );
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                     const graph = graphData
