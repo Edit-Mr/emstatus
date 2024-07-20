@@ -5,7 +5,7 @@
       "url": "https://elvismao.com/",
       "log": [
         {
-          "time": 1721493194996,
+          "time": 1721493494988,
           "status": "200"
         }
       ]
@@ -22,6 +22,10 @@
           "time": 1721493195102,
           "status": 418,
           "message": "No <body> tag found in the response."
+        },
+        {
+          "time": 1721493495132,
+          "status": 200
         }
       ]
     },
@@ -37,6 +41,10 @@
           "time": 1721493195553,
           "status": 418,
           "message": "No <body> tag found in the response."
+        },
+        {
+          "time": 1721493495664,
+          "status": 200
         }
       ]
     },
@@ -45,7 +53,7 @@
       "url": "https://totp.emtech.cc/",
       "log": [
         {
-          "time": 1721493195988,
+          "time": 1721493496174,
           "status": "200"
         }
       ]
@@ -62,6 +70,10 @@
           "time": 1721493196490,
           "status": 418,
           "message": "No <body> tag found in the response."
+        },
+        {
+          "time": 1721493496690,
+          "status": 200
         }
       ]
     },
@@ -83,7 +95,7 @@
           "status": 200
         },
         {
-          "time": 1721493197181,
+          "time": 1721493497320,
           "status": 0,
           "message": "Request failed for https://pi.elvismao.com returned code 500. Truncated server response: <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Error: EIO: i/o error, stat &#39;/home/em/e... (use muteHttpExceptions option to examine full response)"
         }
@@ -101,6 +113,10 @@
           "time": 1721493197325,
           "status": 418,
           "message": "No <body> tag found in the response."
+        },
+        {
+          "time": 1721493497529,
+          "status": 200
         }
       ]
     },
@@ -109,7 +125,7 @@
       "url": "https://store.scaict.org/",
       "log": [
         {
-          "time": 1721493197766,
+          "time": 1721493498073,
           "status": "200"
         }
       ]
@@ -123,12 +139,12 @@
           "status": "200"
         },
         {
-          "time": 1721493198306,
+          "time": 1721493498689,
           "status": 0,
           "message": "Address unavailable: https://meet.scaict.org/"
         }
       ]
     }
   ],
-  "lastUpdate": 1721493198306
+  "lastUpdate": 1721493498689
 }
