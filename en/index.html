@@ -1,0 +1,282 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="https://EM-Tec.github.io/icons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="https://EM-Tec.github.io/icons/favicon-32x32.png"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no"
+        />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="theme-color" content="#131a26" />
+        <meta name="description" content="EM's Website Status" />
+        <meta name="author" content="毛哥EM" />
+        <meta name="keywords" content="毛哥EM, emstatus, Edit Mr." />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="emstatus - 毛哥EM的網頁狀" />
+        <meta property="og:url" content="https://status.emtech.cc" />
+        <meta property="og:site_name" content="毛哥EM的基地" />
+        <meta property="og:description" content="EM's Website Status" />
+        <meta property="og:locale" content="zh-Hant" />
+        <meta property="article:author" content="毛哥EM" />
+        <meta property="article:tag" content="毛哥EM, emstatus, Edit Mr." />
+        <meta name="twitter:card" content="summary_large_image" />
+        <title>emstatus - EM's Website Status</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async=""
+            src="https://www.googletagmanager.com/gtag/js?id=G-9R5PZG2VQG"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-9R5PZG2VQG");
+        </script>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <header>
+            <div>
+                <div>
+                    <h1>emstatus</h1>
+                    <p>EM's Website Status</p>
+                    <p id="lastUpdate"></p>
+                </div>
+                <div class="right">
+                    <div>
+                        <h2>Join my Discord Server</h2>
+                        <div id="Update">
+                            <p>To get the latest updates</p>
+                        </div>
+                    </div>
+                    <button
+                        id="join"
+                        onclick="window.open('https://discord.gg/W8r9x4PwUE', '_blank')"
+                    ></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="conclusion" class="card">
+                <div class="dot"></div>
+                <p id="conclusionText">
+                    All sites<span class="green">operational</span>
+                </p>
+            </div>
+            <h2>Uptime <span>Last 7 days</span></h2>
+            <section id="uptime" class="card">
+                <!-- 動態生成網站狀態 -->
+            </section>
+            <h2>Overall Uptime</h2>
+            <section id="overall" class="card">
+                <!-- 整體上線時間會根據數據更新 -->
+                <div>
+                    <h3 id="last24Hours">0.000%</h3>
+                    <p>Last 7 hours</p>
+                </div>
+                <div>
+                    <h3 id="last7Days">0.000%</h3>
+                    <p>Last 7 days</p>
+                </div>
+                <div>
+                    <h3 id="last30Days">0.000%</h3>
+                    <p>Last 30 days</p>
+                </div>
+                <div>
+                    <h3 id="last90Days">0.000%</h3>
+                    <p>Last 90 days</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Update via Google App Script<br />
+                Powered by
+                <a href="https://github.com/Edit-Mr/emstatus/" target="_blank"
+                    >emstatus</a
+                ><br />Made with ❤️ by
+                <a href="https://elvismao.com/" target="_blank">Elvis Mao</a>
+            </p>
+        </footer>
+        <script>
+            async function fetchStatus() {
+                const response = await fetch(
+                    "https://raw.githubusercontent.com/Edit-Mr/emstatus/main/log.json"
+                );
+                const data = await response.json();
+
+                document.getElementById("lastUpdate").textContent =
+                    "更新時間：" +
+                    new Date(data.lastUpdate).toLocaleString("zh-Hant", {
+                        timeZone: "Asia/Taipei",
+                    });
+
+                const uptimeSection = document.getElementById("uptime");
+                console.log(data.websites.length);
+                let allSitesUp = true;
+                var upTime24 = 24 * 60 * 60 * 1000,
+                    upTime7 = upTime24 * 7,
+                    upTime30 = upTime24 * 30,
+                    upTime90 = upTime30 * 3;
+                const sevenDaysAgo = Date.now() - upTime7,
+                    thirtyDaysAgo = Date.now() - upTime30,
+                    ninetyDaysAgo = Date.now() - upTime90,
+                    twentyFourHoursAgo = Date.now() - upTime24;
+                upTime24 *= data.websites.length;
+                upTime7 *= data.websites.length;
+                upTime30 *= data.websites.length;
+                upTime90 *= data.websites.length;
+                data.websites.forEach(site => {
+                    console.log(site.log);
+                    const lastLog = site.log[site.log.length - 1];
+                    const isUp = lastLog.status == 200;
+                    if (!isUp) {
+                        allSitesUp = false;
+                    }
+                    const siteElement = document.createElement("div");
+                    siteElement.classList.add("website");
+                    // count each peried of time
+                    var graphData = [];
+                    var allTime = 0,
+                        upTime = 0;
+                    // add current to last status
+                    site.log.push({
+                        time: Date.now(),
+                        status: site.log[site.log.length - 1].status,
+                    });
+                    for (var i = 0; i < site.log.length - 1; i++) {
+                        const timeEnd = site.log[i + 1].time;
+                        const timeStart = site.log[i].time;
+                        const timelen = timeEnd - timeStart;
+
+                        if (site.log[i].time > sevenDaysAgo) {
+                            graphData.push({
+                                timelen,
+                                status: site.log[i].status,
+                            });
+                            allTime += timelen;
+                            if (site.log[i].status == 200) {
+                                upTime += timelen;
+                            }
+                        }
+                        if (site.log[i].status != 200) {
+                            if (timeEnd > ninetyDaysAgo) {
+                                upTime90 -=
+                                    timeStart > ninetyDaysAgo
+                                        ? timelen
+                                        : timeEnd - ninetyDaysAgo;
+                                if (timeEnd > thirtyDaysAgo) {
+                                    upTime30 -=
+                                        timeStart > thirtyDaysAgo
+                                            ? timelen
+                                            : timeEnd - thirtyDaysAgo;
+                                    if (timeEnd > sevenDaysAgo) {
+                                        upTime7 -=
+                                            timeStart > sevenDaysAgo
+                                                ? timelen
+                                                : timeEnd - sevenDaysAgo;
+                                        if (timeEnd > twentyFourHoursAgo) {
+                                            upTime24 -=
+                                                timeStart > twentyFourHoursAgo
+                                                    ? timelen
+                                                    : timeEnd -
+                                                      twentyFourHoursAgo;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    const graph = graphData
+                        .map(entry => {
+                            const color =
+                                entry.status == 200
+                                    ? "green"
+                                    : entry.status >= 500
+                                    ? "red"
+                                    : entry.status == 0
+                                    ? "red"
+                                    : "orange";
+                            return `<div class="${color}" style="flex: ${entry.timelen};"></div>`;
+                        })
+                        .join("");
+
+                    siteElement.innerHTML = `
+                        <h3><a href="${site.url}" target="_blank">${
+                        site.name
+                    }</a></h3>
+                        <div class="percentage">${(
+                            (upTime / allTime) *
+                            100
+                        ).toFixed(3)}%</div>
+                        <div class="graph">${graph}</div>
+                        <div class="current-status">
+                            <div class="dot ${isUp ? "green" : "red"}"></div>
+                            <span class="${isUp ? "green" : "red"}">${
+                        isUp ? "Up" : "Error"
+                    }</span>
+                        </div>
+                    `;
+                    uptimeSection.appendChild(siteElement);
+                });
+
+                const conclusionText =
+                    document.getElementById("conclusionText");
+                conclusionText.innerHTML = allSitesUp
+                    ? 'All site <span class="green">operational</span>'
+                    : 'Some sites are <span class="red">down</span>';
+                const conclusionDot =
+                    document.querySelector("#conclusion .dot");
+                conclusionDot.classList.remove("green", "red");
+                conclusionDot.classList.add(allSitesUp ? "green" : "red");
+
+                const overall = document.getElementById("overall");
+                const last24Hours = document.getElementById("last24Hours");
+                const last7Days = document.getElementById("last7Days");
+                const last30Days = document.getElementById("last30Days");
+                const last90Days = document.getElementById("last90Days");
+                last24Hours.textContent =
+                    (
+                        (upTime24 /
+                            (24 * 60 * 60 * 1000 * data.websites.length)) *
+                        100
+                    ).toFixed(3) + "%";
+                last7Days.textContent =
+                    (
+                        (upTime7 /
+                            (7 * 24 * 60 * 60 * 1000 * data.websites.length)) *
+                        100
+                    ).toFixed(3) + "%";
+                last30Days.textContent =
+                    (
+                        (upTime30 /
+                            (30 * 24 * 60 * 60 * 1000 * data.websites.length)) *
+                        100
+                    ).toFixed(3) + "%";
+                last90Days.textContent =
+                    (
+                        (upTime90 /
+                            (90 * 24 * 60 * 60 * 1000 * data.websites.length)) *
+                        100
+                    ).toFixed(3) + "%";
+            }
+
+            fetchStatus();
+        </script>
+    </body>
+</html>
