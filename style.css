@@ -54,6 +54,14 @@ header h1 {
     gap: 1rem;
 }
 
+.lang{
+    text-align: right;margin-top: 1rem;
+}
+
+.lang a {
+    color: #fff;
+}
+
 header h2 {
     font-size: 1.33rem;
     line-height: 1.4;
