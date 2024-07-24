@@ -1,9 +1,9 @@
 /** @format */
 
 function checkWebsiteStatus() {
-    const githubFileUrl = "https://github.com/Edit-Mr/emstatus/raw/main/log.json"; // GitHub Raw URL
-    const githubRepoUrl = "https://api.github.com/repos/Edit-Mr/emstatus/contents/log.json"; // GitHub API URL
-    const githubToken = ""; // GitHub Token
+    const githubFileUrl = "https://github.com/XXXX/emstatus/raw/main/log.json"; // GitHub Raw URL
+    const githubRepoUrl = "https://api.github.com/repos/XXXX/emstatus/contents/log.json"; // GitHub API URL
+    const githubToken = "XXXXXXXXXXXXXXXXXXXXXXXX"; // GitHub Token
 
     const response = UrlFetchApp.fetch(githubFileUrl);
     const jsonData = JSON.parse(response.getContentText());
