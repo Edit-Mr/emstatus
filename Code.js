@@ -1,11 +1,10 @@
 /** @format */
 
 function checkWebsiteStatus() {
-    const githubFileUrl = "https://github.com/Edit-Mr/emstatus/raw/main/log.json";
-    const githubRepoUrl = "https://api.github.com/repos/Edit-Mr/emstatus/contents/log.json";
-    const githubToken = ""; // 請替換為你的 GitHub Token
+    const githubFileUrl = "https://github.com/Edit-Mr/emstatus/raw/main/log.json"; // GitHub Raw URL
+    const githubRepoUrl = "https://api.github.com/repos/Edit-Mr/emstatus/contents/log.json"; // GitHub API URL
+    const githubToken = ""; // GitHub Token
 
-    // 讀取現有的 JSON 文件
     const response = UrlFetchApp.fetch(githubFileUrl);
     const jsonData = JSON.parse(response.getContentText());
 
@@ -50,8 +49,18 @@ function checkWebsiteStatus() {
 function getWebsiteStatus(url) {
     try {
         const response = UrlFetchApp.fetch(url);
+        const responseCode = response.getResponseCode();
+        const responseBody = response.getContentText();
+
+        if (!responseBody.includes('<body')) {
+            return {
+                code: 418, // I'm a teapot
+                message: "No <body> tag found in the response.",
+            };
+        }
+
         return {
-            code: response.getResponseCode(),
+            code: responseCode,
             message: "",
         };
     } catch (e) {
@@ -69,7 +78,6 @@ function getWebsiteStatus(url) {
     }
 }
 
-
 function getShaOfFile(githubRepoUrl, githubToken) {
     const options = {
         method: "get",
@@ -81,10 +89,4 @@ function getShaOfFile(githubRepoUrl, githubToken) {
     const response = UrlFetchApp.fetch(githubRepoUrl, options);
     const json = JSON.parse(response.getContentText());
     return json.sha;
-}
-
-function testStatus() {
-    const url = "https://pi.elvismao.com/";
-    const e = getWebsiteStatus(url);
-    Logger.log(e);
 }
