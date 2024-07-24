@@ -1,10 +1,14 @@
 /** @format */
+const githubFileUrl =
+    "https://raw.githubusercontent.com/XXXXXXXXXXXXXXXX/emstatus/deploy/log.json"; // GitHub Raw URL
+const githubRepoUrl =
+    "https://api.github.com/repos/XXXXXXXXXXXXXXXX/emstatus/contents/log.json?ref=main"; // GitHub API URL
+const githubToken = "XXXXXXXXXXXXXXXX"; // 請替換為你的 GitHub Token
+const githubBranch = "main"; // GitHub Branch
+
+/** @format */
 
 function checkWebsiteStatus() {
-    const githubFileUrl = "https://github.com/XXXX/emstatus/raw/main/log.json"; // GitHub Raw URL
-    const githubRepoUrl = "https://api.github.com/repos/XXXX/emstatus/contents/log.json"; // GitHub API URL
-    const githubToken = "XXXXXXXXXXXXXXXXXXXXXXXX"; // GitHub Token
-
     const response = UrlFetchApp.fetch(githubFileUrl);
     const jsonData = JSON.parse(response.getContentText());
 
@@ -26,10 +30,11 @@ function checkWebsiteStatus() {
         }
     });
     jsonData.lastUpdate = Date.now();
-    // 將更新後的 JSON 文件轉為字符串
     const updatedJsonData = JSON.stringify(jsonData, null, 2);
 
-    // 使用 GitHub API 更新文件
+    // Fetch the latest SHA of the file before updating
+    const latestSha = getShaOfFile(githubRepoUrl, githubToken);
+
     const options = {
         method: "put",
         contentType: "application/json",
@@ -37,9 +42,14 @@ function checkWebsiteStatus() {
             Authorization: "token " + githubToken,
         },
         payload: JSON.stringify({
-            message: "更新紀錄 " + new Date().toLocaleString("zh-TW", { timeZone: "Asia/Taipei" }),
-            content: Utilities.base64Encode(Utilities.newBlob(updatedJsonData).getBytes()),
-            sha: getShaOfFile(githubRepoUrl, githubToken),
+            message:
+                "更新紀錄 " +
+                new Date().toLocaleString("zh-TW", { timeZone: "Asia/Taipei" }),
+            content: Utilities.base64Encode(
+                Utilities.newBlob(updatedJsonData).getBytes()
+            ),
+            sha: latestSha,
+            branch: githubBranch,
         }),
     };
 
@@ -52,7 +62,7 @@ function getWebsiteStatus(url) {
         const responseCode = response.getResponseCode();
         const responseBody = response.getContentText();
 
-        if (!responseBody.includes('<body')) {
+        if (!responseBody.includes("<body")) {
             return {
                 code: 418, // I'm a teapot
                 message: "No <body> tag found in the response.",
