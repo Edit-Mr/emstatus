@@ -1,8 +1,10 @@
 # emstatus - 毛哥EM的網頁狀態監控
 
-<https://status.emtech.cc>
+![](screenshot.png)
 
 emstatus 是一個簡單而高效的網站狀態監控工具,專為毛哥EM的網站設計。它使用Google Apps Script定期檢查網站狀態,並在GitHub上更新結果。
+
+<https://status.emtech.cc>
 
 UI 設計靈感來自 [UptimeRobot](https://uptimerobot.com)
 
