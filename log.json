@@ -5,15 +5,6 @@
       "url": "https://elvismao.com/",
       "log": [
         {
-          "time": 1721676198401,
-          "status": "200"
-        },
-        {
-          "time": 1721676804278,
-          "status": 0,
-          "message": "Service invoked too many times for one day: urlfetch."
-        },
-        {
           "time": 1721792300666,
           "status": 200
         }
@@ -24,15 +15,6 @@
       "url": "https://emtech.cc/",
       "log": [
         {
-          "time": 1721047095628,
-          "status": 200
-        },
-        {
-          "time": 1721493195102,
-          "status": 418,
-          "message": "No <body> tag found in the response."
-        },
-        {
           "time": 1721792300848,
           "status": 200
         }
@@ -42,15 +24,6 @@
       "name": "emfont",
       "url": "https://font.emtech.cc/",
       "log": [
-        {
-          "time": 1721047096124,
-          "status": "200"
-        },
-        {
-          "time": 1721493195553,
-          "status": 418,
-          "message": "No <body> tag found in the response."
-        },
         {
           "time": 1721792301408,
           "status": 200
@@ -123,15 +96,6 @@
       "name": "SCAICT",
       "url": "https://scaict.org/",
       "log": [
-        {
-          "time": 1721047098083,
-          "status": "200"
-        },
-        {
-          "time": 1721493197325,
-          "status": 418,
-          "message": "No <body> tag found in the response."
-        },
         {
           "time": 1721792302999,
           "status": 200

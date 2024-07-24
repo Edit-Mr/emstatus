@@ -29,16 +29,19 @@ UI 設計靈感來自 [UptimeRobot](https://uptimerobot.com)
 ## 如何使用
 
 1. 克隆此倉庫
-2. 在Google Apps Script中設置`Code.js`文件
-3. 設置GitHub Token和需要監控的網站列表
+2. 在 Google Apps Script 中設置`Code.js`文件，並設定自動觸發
+
+![設定自動觸發](image.png)
+
+3. 設置 GitHub Token 和需要監控的網站列表
 4. 部署前端文件到您的網站服務器
 
 ## 配置
 
 在`Code.js`中,您需要:
 
-1. 設置您的GitHub Token
-2. 在JSON文件中添加您想監控的網站
+1. 設置您的 GitHub Token
+2. 在 JSON 文件中添加您想監控的網站
 
 ## 貢獻
 
@@ -46,4 +49,4 @@ UI 設計靈感來自 [UptimeRobot](https://uptimerobot.com)
 
 ## 聯繫方式
 
-- 作者: [Elvis Mao](https://elvismao.com) (毛哥EM)
+- 作者: [毛哥EM](https://elvismao.com)
