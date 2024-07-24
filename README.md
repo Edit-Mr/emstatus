@@ -1,5 +1,7 @@
 # emstatus - 毛哥EM的網頁狀態監控
 
+[中文](README.md) | [English](README.en.md)
+
 ![](screenshot.png)
 
 emstatus 是一個簡單而高效的網站狀態監控工具。它使用 Google Apps Script 定期檢查網站狀態，並在 GitHub 上更新結果。
