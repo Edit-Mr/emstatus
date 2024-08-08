@@ -5,7 +5,7 @@
       "url": "https://elvismao.com/",
       "log": [
         {
-          "time": 1723126394767,
+          "time": 1723126694733,
           "status": 200
         }
       ]
@@ -15,7 +15,7 @@
       "url": "https://emtech.cc/",
       "log": [
         {
-          "time": 1723126394927,
+          "time": 1723126694966,
           "status": 200
         }
       ]
@@ -34,7 +34,7 @@
           "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1723126395402,
+          "time": 1723126695580,
           "status": 200
         }
       ]
@@ -48,7 +48,7 @@
           "status": "200"
         },
         {
-          "time": 1723126395879,
+          "time": 1723126696231,
           "status": 0,
           "message": "Request failed for https://totp.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
         }
@@ -122,13 +122,8 @@
           "message": "Request failed for https://eduvoice.emtech.cc returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1723126098130,
+          "time": 1723126696964,
           "status": 200
-        },
-        {
-          "time": 1723126396348,
-          "status": 0,
-          "message": "Request failed for https://eduvoice.emtech.cc returned code 401. Truncated server response: {\"message\":\"錯誤的登入驗證，請重新登入再試一次\"} (use muteHttpExceptions option to examine full response)"
         }
       ]
     },
@@ -150,7 +145,7 @@
           "status": 200
         },
         {
-          "time": 1723126396643,
+          "time": 1723126697341,
           "status": 0,
           "message": "Request failed for https://pi.elvismao.com returned code 500. Truncated server response: <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Error: EIO: i/o error, stat &#39;/home/em/e... (use muteHttpExceptions option to examine full response)"
         }
@@ -161,7 +156,7 @@
       "url": "https://scaict.org/",
       "log": [
         {
-          "time": 1723126396811,
+          "time": 1723126697572,
           "status": 200
         }
       ]
@@ -171,7 +166,7 @@
       "url": "https://store.scaict.org/",
       "log": [
         {
-          "time": 1723126397279,
+          "time": 1723126698218,
           "status": "200"
         }
       ]
@@ -185,12 +180,12 @@
           "status": "200"
         },
         {
-          "time": 1723126397818,
+          "time": 1723126698791,
           "status": 0,
           "message": "Address unavailable: https://meet.scaict.org/"
         }
       ]
     }
   ],
-  "lastUpdate": 1723126397818
+  "lastUpdate": 1723126698791
 }
