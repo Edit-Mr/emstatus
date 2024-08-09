@@ -5,7 +5,7 @@
       "url": "https://elvismao.com/",
       "log": [
         {
-          "time": 1723196594861,
+          "time": 1723196634217,
           "status": 200
         }
       ]
@@ -15,7 +15,7 @@
       "url": "https://emtech.cc/",
       "log": [
         {
-          "time": 1723196595092,
+          "time": 1723196634389,
           "status": 200
         }
       ]
@@ -34,8 +34,13 @@
           "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1723196625751,
+          "time": 1723196295799,
           "status": 200
+        },
+        {
+          "time": 1723196695246,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 504. Truncated server response: error code: 504 (use muteHttpExceptions option to examine full response)"
         }
       ]
     },
@@ -48,7 +53,7 @@
           "status": "200"
         },
         {
-          "time": 1723196626523,
+          "time": 1723196695894,
           "status": 0,
           "message": "Request failed for https://totp.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
         }
@@ -122,8 +127,13 @@
           "message": "Request failed for https://eduvoice.emtech.cc returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1723196678160,
+          "time": 1723196297107,
           "status": 200
+        },
+        {
+          "time": 1723196757120,
+          "status": 0,
+          "message": "Request failed for https://eduvoice.emtech.cc returned code 504. Truncated server response: error code: 504 (use muteHttpExceptions option to examine full response)"
         }
       ]
     },
@@ -145,7 +155,7 @@
           "status": 200
         },
         {
-          "time": 1723196678546,
+          "time": 1723196757454,
           "status": 0,
           "message": "Request failed for https://pi.elvismao.com returned code 500. Truncated server response: <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Error: EIO: i/o error, stat &#39;/home/em/e... (use muteHttpExceptions option to examine full response)"
         }
@@ -156,7 +166,7 @@
       "url": "https://scaict.org/",
       "log": [
         {
-          "time": 1723196678759,
+          "time": 1723196757727,
           "status": 200
         }
       ]
@@ -166,7 +176,7 @@
       "url": "https://store.scaict.org/",
       "log": [
         {
-          "time": 1723196679358,
+          "time": 1723196758345,
           "status": "200"
         }
       ]
@@ -180,12 +190,12 @@
           "status": "200"
         },
         {
-          "time": 1723196679909,
+          "time": 1723196759082,
           "status": 0,
           "message": "Address unavailable: https://meet.scaict.org/"
         }
       ]
     }
   ],
-  "lastUpdate": 1723196679909
+  "lastUpdate": 1723196759082
 }
