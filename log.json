@@ -5,7 +5,7 @@
       "url": "https://elvismao.com/",
       "log": [
         {
-          "time": 1723412294390,
+          "time": 1723412594610,
           "status": 200
         }
       ]
@@ -15,7 +15,7 @@
       "url": "https://emtech.cc/",
       "log": [
         {
-          "time": 1723412294558,
+          "time": 1723412594750,
           "status": 200
         }
       ]
@@ -34,7 +34,7 @@
           "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1723412295176,
+          "time": 1723412595291,
           "status": 200
         }
       ]
@@ -53,7 +53,7 @@
           "message": "Request failed for https://totp.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1723412295799,
+          "time": 1723412595751,
           "status": 200
         }
       ]
@@ -126,7 +126,7 @@
           "message": "Request failed for https://eduvoice.emtech.cc returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1723412296407,
+          "time": 1723412596257,
           "status": 200
         }
       ]
@@ -149,7 +149,7 @@
           "status": 200
         },
         {
-          "time": 1723412296712,
+          "time": 1723412596515,
           "status": 0,
           "message": "Request failed for https://pi.elvismao.com returned code 500. Truncated server response: <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Error: EIO: i/o error, stat &#39;/home/em/e... (use muteHttpExceptions option to examine full response)"
         }
@@ -160,7 +160,7 @@
       "url": "https://scaict.org/",
       "log": [
         {
-          "time": 1723412296880,
+          "time": 1723412596783,
           "status": 200
         }
       ]
@@ -170,7 +170,7 @@
       "url": "https://store.scaict.org/",
       "log": [
         {
-          "time": 1723412297475,
+          "time": 1723412597283,
           "status": "200"
         }
       ]
@@ -184,12 +184,12 @@
           "status": "200"
         },
         {
-          "time": 1723412298068,
+          "time": 1723412597985,
           "status": 0,
           "message": "Address unavailable: https://meet.scaict.org/"
         }
       ]
     }
   ],
-  "lastUpdate": 1723412298068
+  "lastUpdate": 1723412597985
 }
