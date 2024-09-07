@@ -5,7 +5,7 @@
       "url": "https://elvismao.com/",
       "log": [
         {
-          "time": 1721820328221,
+          "time": 1725691394547,
           "status": 200
         }
       ]
@@ -15,7 +15,7 @@
       "url": "https://emtech.cc/",
       "log": [
         {
-          "time": 1721820328419,
+          "time": 1725691394695,
           "status": 200
         }
       ]
@@ -25,7 +25,142 @@
       "url": "https://font.emtech.cc/",
       "log": [
         {
-          "time": 1721820329060,
+          "time": 1722901994964,
+          "status": 200
+        },
+        {
+          "time": 1722922695555,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724022195560,
+          "status": 200
+        },
+        {
+          "time": 1724022839390,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 520. Truncated server response: error code: 520 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724023121009,
+          "status": 200
+        },
+        {
+          "time": 1724023437626,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 520. Truncated server response: error code: 520 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724081896211,
+          "status": 200
+        },
+        {
+          "time": 1724254095408,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 523. Truncated server response: error code: 523 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724341696229,
+          "status": 200
+        },
+        {
+          "time": 1724342599996,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724760495106,
+          "status": 200
+        },
+        {
+          "time": 1724760834667,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724761095322,
+          "status": 200
+        },
+        {
+          "time": 1724761435354,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725022995479,
+          "status": 200
+        },
+        {
+          "time": 1725024498227,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 523. Truncated server response: error code: 523 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725025995217,
+          "status": 200
+        },
+        {
+          "time": 1725028734619,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725451802425,
+          "status": 200
+        },
+        {
+          "time": 1725452029381,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 523. Truncated server response: error code: 523 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725454096436,
+          "status": 200
+        },
+        {
+          "time": 1725455936717,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725550095530,
+          "status": 200
+        },
+        {
+          "time": 1725550490749,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 520. Truncated server response: error code: 520 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725550697418,
+          "status": 200
+        },
+        {
+          "time": 1725551096375,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 524. Truncated server response: error code: 524 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725552559257,
+          "status": 200
+        },
+        {
+          "time": 1725552833978,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725683296180,
+          "status": 200
+        },
+        {
+          "time": 1725688097797,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725691395383,
           "status": 200
         }
       ]
@@ -35,8 +170,44 @@
       "url": "https://totp.emtech.cc/",
       "log": [
         {
-          "time": 1721820329663,
+          "time": 1722901995391,
           "status": "200"
+        },
+        {
+          "time": 1723368195036,
+          "status": 0,
+          "message": "Request failed for https://totp.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723609396743,
+          "status": 200
+        },
+        {
+          "time": 1723610596440,
+          "status": 0,
+          "message": "Request failed for https://totp.emtech.cc returned code 502. Truncated server response: Bad Gateway (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724045595884,
+          "status": 200
+        },
+        {
+          "time": 1724046211839,
+          "status": 0,
+          "message": "Request failed for https://totp.emtech.cc returned code 502. Truncated server response: Bad Gateway (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725605595677,
+          "status": 200
+        },
+        {
+          "time": 1725605945778,
+          "status": 0,
+          "message": "Address unavailable: https://totp.emtech.cc/"
+        },
+        {
+          "time": 1725691396034,
+          "status": 200
         }
       ]
     },
@@ -63,8 +234,58 @@
           "message": "Request failed for https://eduvoice.emtech.cc returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1721820330299,
+          "time": 1721898795811,
           "status": 200
+        },
+        {
+          "time": 1721899696743,
+          "status": 0,
+          "message": "Request failed for https://eduvoice.emtech.cc returned code 500. Truncated server response: <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>SyntaxError: /root/EduVoice/src/views/index... (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1722901995813,
+          "status": 200
+        },
+        {
+          "time": 1723096697939,
+          "status": 0,
+          "message": "Request failed for https://eduvoice.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723099396560,
+          "status": 200
+        },
+        {
+          "time": 1723099996481,
+          "status": 0,
+          "message": "Request failed for https://eduvoice.emtech.cc returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723100597222,
+          "status": 200
+        },
+        {
+          "time": 1723100896382,
+          "status": 0,
+          "message": "Request failed for https://eduvoice.emtech.cc returned code 500. Truncated server response: <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>JsonWebTokenError: jwt must be provided<br>... (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723105096175,
+          "status": 200
+        },
+        {
+          "time": 1723105396909,
+          "status": 0,
+          "message": "Request failed for https://eduvoice.emtech.cc returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723999096766,
+          "status": 200
+        },
+        {
+          "time": 1725691396346,
+          "status": 0,
+          "message": "Request failed for https://eduvoice.emtech.cc returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
         }
       ]
     },
@@ -86,7 +307,7 @@
           "status": 200
         },
         {
-          "time": 1721820330619,
+          "time": 1725691396421,
           "status": 0,
           "message": "Request failed for https://pi.elvismao.com returned code 500. Truncated server response: <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Error: EIO: i/o error, stat &#39;/home/em/e... (use muteHttpExceptions option to examine full response)"
         }
@@ -97,7 +318,7 @@
       "url": "https://scaict.org/",
       "log": [
         {
-          "time": 1721820330778,
+          "time": 1725691396630,
           "status": 200
         }
       ]
@@ -107,8 +328,188 @@
       "url": "https://store.scaict.org/",
       "log": [
         {
-          "time": 1721820331389,
+          "time": 1723702697408,
           "status": "200"
+        },
+        {
+          "time": 1723710497180,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723713798985,
+          "status": 200
+        },
+        {
+          "time": 1723717997905,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 500. Truncated server response: <!doctype html>\n<html lang=en>\n<title>500 Internal Server Error</title>\n<h1>Internal Server Error</h1>\n<p>The server encountered an internal error ... (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723955897594,
+          "status": 200
+        },
+        {
+          "time": 1723956262645,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 520. Truncated server response: error code: 520 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723972098901,
+          "status": 200
+        },
+        {
+          "time": 1723972511742,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 524. Truncated server response: error code: 524 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723975098725,
+          "status": 200
+        },
+        {
+          "time": 1723975443104,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 520. Truncated server response: error code: 520 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723975997623,
+          "status": 200
+        },
+        {
+          "time": 1723976335323,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1723983797763,
+          "status": 200
+        },
+        {
+          "time": 1723984200841,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 524. Truncated server response: error code: 524 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724022881279,
+          "status": 200
+        },
+        {
+          "time": 1724023223144,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 520. Truncated server response: error code: 520 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724081336752,
+          "status": 200
+        },
+        {
+          "time": 1724107137346,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 523. Truncated server response: error code: 523 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724117335758,
+          "status": 200
+        },
+        {
+          "time": 1724119137116,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724336936352,
+          "status": 200
+        },
+        {
+          "time": 1724342640854,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724349836065,
+          "status": 200
+        },
+        {
+          "time": 1724350136583,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724760535828,
+          "status": 200
+        },
+        {
+          "time": 1724760914398,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1724761136353,
+          "status": 200
+        },
+        {
+          "time": 1724761515236,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725022997304,
+          "status": 200
+        },
+        {
+          "time": 1725061735657,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 523. Truncated server response: error code: 523 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725451536533,
+          "status": 200
+        },
+        {
+          "time": 1725452034194,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725454099233,
+          "status": 200
+        },
+        {
+          "time": 1725455373604,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725550701027,
+          "status": 200
+        },
+        {
+          "time": 1725551137316,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725552561312,
+          "status": 200
+        },
+        {
+          "time": 1725552875174,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725683301896,
+          "status": 200
+        },
+        {
+          "time": 1725688102084,
+          "status": 0,
+          "message": "Request failed for https://store.scaict.org returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
+        },
+        {
+          "time": 1725691397360,
+          "status": 200
         }
       ]
     },
@@ -121,12 +522,12 @@
           "status": "200"
         },
         {
-          "time": 1721820331939,
+          "time": 1725691398138,
           "status": 0,
           "message": "Address unavailable: https://meet.scaict.org/"
         }
       ]
     }
   ],
-  "lastUpdate": 1721820331939
+  "lastUpdate": 1725691398138
 }
