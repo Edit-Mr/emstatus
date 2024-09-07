@@ -5,7 +5,7 @@
       "url": "https://elvismao.com/",
       "log": [
         {
-          "time": 1725683894938,
+          "time": 1725684194441,
           "status": 200
         }
       ]
@@ -15,7 +15,7 @@
       "url": "https://emtech.cc/",
       "log": [
         {
-          "time": 1725683895077,
+          "time": 1725684194596,
           "status": 200
         }
       ]
@@ -155,13 +155,9 @@
           "status": 200
         },
         {
-          "time": 1725683634430,
+          "time": 1725684233976,
           "status": 0,
           "message": "Request failed for https://font.emtech.cc returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
-        },
-        {
-          "time": 1725683895802,
-          "status": 200
         }
       ]
     },
@@ -206,7 +202,7 @@
           "message": "Address unavailable: https://totp.emtech.cc/"
         },
         {
-          "time": 1725683896437,
+          "time": 1725684234655,
           "status": 200
         }
       ]
@@ -283,7 +279,7 @@
           "status": 200
         },
         {
-          "time": 1725683896730,
+          "time": 1725684235010,
           "status": 0,
           "message": "Request failed for https://eduvoice.emtech.cc returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
         }
@@ -307,7 +303,7 @@
           "status": 200
         },
         {
-          "time": 1725683896790,
+          "time": 1725684235113,
           "status": 0,
           "message": "Request failed for https://pi.elvismao.com returned code 500. Truncated server response: <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Error: EIO: i/o error, stat &#39;/home/em/e... (use muteHttpExceptions option to examine full response)"
         }
@@ -318,7 +314,7 @@
       "url": "https://scaict.org/",
       "log": [
         {
-          "time": 1725683896985,
+          "time": 1725684235318,
           "status": 200
         }
       ]
@@ -503,13 +499,9 @@
           "status": 200
         },
         {
-          "time": 1725683675034,
+          "time": 1725684274648,
           "status": 0,
           "message": "Request failed for https://store.scaict.org returned code 522. Truncated server response: error code: 522 (use muteHttpExceptions option to examine full response)"
-        },
-        {
-          "time": 1725683917027,
-          "status": 200
         }
       ]
     },
@@ -522,12 +514,12 @@
           "status": "200"
         },
         {
-          "time": 1725683917668,
+          "time": 1725684275255,
           "status": 0,
           "message": "Address unavailable: https://meet.scaict.org/"
         }
       ]
     }
   ],
-  "lastUpdate": 1725683917668
+  "lastUpdate": 1725684275255
 }
