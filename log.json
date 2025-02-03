@@ -23,7 +23,7 @@
           "message": "Request failed for https://elvismao.com returned code 503. Truncated server response: \n<!DOCTYPE html>\n<!--\n\nHello future GitHubber! I bet you're here to remove those nasty inline styles,\nDRY up these templates and make 'em nice and ... (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1738579994844,
+          "time": 1738580295115,
           "status": 200
         }
       ]
@@ -60,7 +60,7 @@
           "message": "Address unavailable: https://emtech.cc/"
         },
         {
-          "time": 1738579995031,
+          "time": 1738580295356,
           "status": 200
         }
       ]
@@ -1188,6 +1188,11 @@
         {
           "time": 1738579995777,
           "status": 200
+        },
+        {
+          "time": 1738580298396,
+          "status": 0,
+          "message": "Request failed for https://font.emtech.cc returned code 502. Truncated server response: error code: 502 (use muteHttpExceptions option to examine full response)"
         }
       ]
     },
@@ -1673,7 +1678,7 @@
           "message": "Request failed for https://totp.emtech.cc returned code 520. Truncated server response: error code: 520 (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1738580006487,
+          "time": 1738580301794,
           "status": 200
         }
       ]
@@ -2160,7 +2165,7 @@
           "message": "Request failed for https://eduvoice.emtech.cc returned code 523. Truncated server response: error code: 523 (use muteHttpExceptions option to examine full response)"
         },
         {
-          "time": 1738580010566,
+          "time": 1738580303196,
           "status": 200
         }
       ]
@@ -2183,7 +2188,7 @@
           "status": 200
         },
         {
-          "time": 1738580010617,
+          "time": 1738580303361,
           "status": 0,
           "message": "Request failed for https://pi.elvismao.com returned code 500. Truncated server response: <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<title>Error</title>\n</head>\n<body>\n<pre>Error: EIO: i/o error, stat &#39;/home/em/e... (use muteHttpExceptions option to examine full response)"
         }
@@ -2212,7 +2217,7 @@
           "message": "Address unavailable: https://scaict.org/"
         },
         {
-          "time": 1738580010866,
+          "time": 1738580303598,
           "status": 200
         }
       ]
@@ -3271,7 +3276,7 @@
           "message": "Address unavailable: https://store.scaict.org/"
         },
         {
-          "time": 1738580026655,
+          "time": 1738580316497,
           "status": 200
         }
       ]
@@ -3308,11 +3313,11 @@
           "message": "Address unavailable: https://meet.scaict.org/"
         },
         {
-          "time": 1738580026865,
+          "time": 1738580316826,
           "status": 200
         }
       ]
     }
   ],
-  "lastUpdate": 1738580026865
+  "lastUpdate": 1738580316826
 }
