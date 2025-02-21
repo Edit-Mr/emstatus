@@ -1,5 +1,8 @@
 # emstatus - 毛哥EM的網頁狀態監控
 
+> [!WARNING]  
+> 此專案有一些爛問題無法正常顯示及紀錄，目前待修復，因此暫停執行。
+
 [中文](README.md) | [English](README.en.md)
 
 ![](screenshot.png)
